@@ -1,0 +1,32 @@
+body{
+    background-image: url(img/Cyberpunk_Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+  background-color: #273032;
+  color: #FFF;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-color: blue;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
+}
+
+a {
+  color: pink;
+}
