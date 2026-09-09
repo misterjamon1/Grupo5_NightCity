@@ -1,13 +1,14 @@
-body{
-    background-image: url(img/Cyberpunk_Fondo.png);
+/*
+body{ /* Este codigo sirve para cambiar la imagen de fondo*/
+    /*background-image: url(img/Cyberpunk_Fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-nav{
-  background-color: #273032;
+*/
+nav{ /* Este codigo sirve para mostrar la barra superior que contiene los links para poder pasar a las distintas paginas*/
+  background-color: #ff0000;gh
   color: #FFF;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +25,10 @@ ul {
 li {
   list-style: none;
   display: inline;
-  margin-right: 1rem;
+  margin-right: 2rem;
+  font-size: 32px;
 }
 
 a {
-  color: pink;
+  color: rgb(0, 180, 252);
 }
