@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1><p style="text-align: center; font-size: 48px; color: green;">Night City</p></h1>
+
+<h2><em> <p style="text-align: center; font-size: 32px; color: aqua;"> La ciudad de los sueños </p></em></h2>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>                
+                <li><a href="./Lugares.html">Lugares</a></li>
+                <li><a href="./Ciudad.html">Ciudad</a></li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header> 
+        <main>
+        <h2>Como conseguir un cupo</h2>
+        <br>
+        <form action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"
+             required>
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="email" required placeholder="tu@correo.com">
+            <br>
+            <label for="cumpleanios">Cuando Naciste?</label>
+            <input type="date" name="cumpleanios" id="cumpleanios">
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad">
+            <br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="+1122334455">
+            <select name="programa" id="programa" required>
+                <option value="">Eleji tu programa</option>
+                <option value="ad">Abuelas Digitales</option>
+                <option value="jp">Jovenes Digitales</option>
+                <option value="mi">Mujeres Internautas</option>
+            </select>
+            <br>
+            <select name="turno" id="turno">
+                <option value="">Eleji tu disponibilidad</option>
+                <option value="ma">Mañana</option>
+                <option value="ta">Tarde</option>
+                <option value="no">Noche</option>
+            </select>
+            <br>
+            <label for="mensaje"> Dejanos tus comentarios</label>
+            <textarea name="mensaje" id="mensaje" rows="4" placeholder="Queremos saber tus sugerencias"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+
+        </form>
+
+</body>
+</html>
