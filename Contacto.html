@@ -9,34 +9,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 48px; color: green;">Night City</h1>
-    <h2 style="text-align: center; font-size: 32px; color: aqua;"><em>La ciudad de los sueños</em></h2>
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Lugares.html">Lugares</a></li>
-                <li><a href="./Ciudad.html">Ciudad</a></li>
-                <li>Contacto</li>
-            </ul>
+        <h1 style="text-align: center; font-size: 48px; color: green;">Night City</h1>
+    <br>
+        <h2 style="text-align: center; font-size: 32px; color: aqua;"><em>La ciudad de los sueños</em></h2>
+    <br>
+        <nav class="barra-de-inicio" style="font-size: 32px;">
+            <a href="./index.html">Inicio</a>             
+            <a href="./Lugares.html">Lugares</a>
+            <a href="./Ciudad.html">Ciudad</a>
+            Contacto
         </nav>
+    </header> 
+        <main>
+        <h2>Como conseguir un cupo</h2>
+        <br>
     </header>
     <main>
         <h2>Solicitá tu viaje a Night City</h2>
         <form action="#" method="post">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
             <br>
+            <br>
+
             <label for="email">Correo electrónico</label>
             <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
             <br>
+            <br>
+
+            <label for="cumpleanios">Cuando Naciste?</label>
+            <input type="date" name="cumpleanios" id="cumpleanios">
+
+            <br>
+            <br>
+
             <label for="fecha">Fecha de viaje</label>
             <input type="date" id="fecha" name="fecha">
+
             <br>
+            <br>
+
             <label for="personas">Cantidad de pasajeros</label>
             <input type="number" id="personas" name="personas" min="1">
+
             <br>
-            <label for="distrito">Distrito que querés visitar</label>
+            <br>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="+1122334455">
+
+            <br>
+            <br>
+
             <select name="distrito" id="distrito" required>
                 <option value="">Elegí un distrito</option>
                 <option value="watson">Watson</option>
@@ -44,12 +71,29 @@
                 <option value="heywood">Heywood</option>
                 <option value="pacifica">Pacifica</option>
             </select>
+
             <br>
+            <br>
+
+            <select name="turno" id="turno">
+                <option value="">Eleji tu disponibilidad</option>
+                <option value="ma">Mañana</option>
+                <option value="ta">Tarde</option>
+                <option value="no">Noche</option>
+            </select>
+            
+            <br>
+            <br>
+
             <label for="mensaje">Dejanos tu consulta</label>
             <textarea name="mensaje" id="mensaje" rows="4" placeholder="Contanos qué te gustaría conocer de Night City"></textarea>
+            
             <br>
+            <br>
+
             <button type="submit">Enviar solicitud</button>
         </form>
+
     </main>
 </body>
 </html>
