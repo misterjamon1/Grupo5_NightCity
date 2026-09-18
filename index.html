@@ -8,62 +8,53 @@
 </head>
 <body>
     <header>
-        <h1 style="text-align: center; font-size: 48px; color: green;">Night City</h1>
-    <br>
-        <h2 style="text-align: center; font-size: 32px; color: aqua;"><em>La ciudad de los sueños</em></h2>
-    <br>
-        <nav class="barra-de-inicio" style="font-size: 32px;">
-            Inicio               
-            <a href="./Lugares.html">Lugares</a>
-            <a href="./Ciudad.html">Ciudad</a>
-            <a href="./Contacto.html">Contacto</a>
-        </nav>
+        <h1 class="logo"><em>Night City</em></h1>
+            <nav>
+                <ul class="menu">
+                    <li class="links">Inicio</li>               
+                    <li class="links"><a href="./Lugares.html">Lugares</a></li>
+                    <li class="links"><a href="./Ciudad.html">Ciudad</a></li>
+                    <li class="links"><a href="./Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
     </header> 
     <main>
-        <h3><p style="text-align: center; font-size: 32px;">"El mejor lugar del mundo!"</p></h3> <br>
-        <p style="text-align: center; font-size: 20px;"> ¡Te damos la bienvenida a la pagina oficial de Night City! <br>
-            Aqui podras tener un pequeño y ligero vistazo a lo que nuestra hermosa ciudad te puede ofrecer <br></p> 
-        <p style="text-align: center; font-size: 32px;">Night City cuenta con:</p>
+        <h2>"El mejor lugar del mundo!"</h2><br>
+        ¡Te damos la bienvenida a la pagina oficial de Night City! <br>
+        Aqui podras tener un pequeño y ligero vistazo a lo que nuestra hermosa ciudad te puede ofrecer <br>
+        <h3>Night City cuenta con:</h3>
 
-        <div class="cuerpo-articulos"> <!--Cada articulo NO debe superar los 5 renglones-->
-
-            <div class="articulo1"> <!--Este articulo debe estar a la izquierda-->
-                <article style="text-align: center;">
+        <section class="cuerpo-articulos"> <!--Los articulos NO deben superar los 8 renglones-->
+            <div class="articulos"> <!--Este articulo debe estar a la izquierda-->
+                <img src="./img/Trauma Team 2.png" alt="Trauma Team">
+                <article>
                     Uno de los mejores equipos medicos del mundo <br> 
-                    ¡el famoso <strong>Trauma Team</strong>!<br>
-                    Ellos llegaran en cuestion de minutos a salvar tu vida <br>
+                    ¡el famoso <strong>Trauma Team</strong>! Ellos llegaran en cuestion de minutos a salvar tu vida <br>
                     (Siempre y cuando estes subscripto y tengas los edis para pagarles, claro)
                 </article>
-                <div style="text-align: center;"> <!--Esto sirve para que la imagen este centrada-->
-                    <img src="./img/Trauma Team 2.png" alt="Trauma Team" style="border: 3px solid black;" height="275" width="200">
-                </div>
             </div> 
             
-            <div class="articulo2"> <!--Este articulo debe estar en el medio-->
-                <article style="text-align: center;">
-                    Insertar informacion aqui <br>
-                    Buscar Informacion e imagenes de cyberware o matasanos <br>
-                    Lo que sea mas interesante y dentro de todo "legal" en el mundo de Cyberpunk
+            <div class="articulos"> <!--Este articulo debe estar en el medio-->
+                 <img src="./img/Cyberware.png" alt="Cyberware">
+                <article>
+                    ¡Cyberware de primer nivel que te puedes implantar en
+                    nuestras mejores clinicas corporativas cortesia de Arasaka! <br> (O puedes tambien
+                    ir a un matasanos y correr el riesgo de volverte un cyberpsicopata,
+                    aqui no juzgamos)
                  </article>
-                 <div style="text-align: center;">
-                    <img src="" alt="Insertar Imagen Aqui" style="border: 3px solid black;" height="250" width="150">
-                 </div>
             </div>
 
-            <div class="articulo3"> <!--Este articulo debe estar a la derecha-->
-                <article style="text-align: center;">
-                    Y el mejor equipo militar de todos los tiempos <br> 
-                    capaz de mantener Night City segura de los malechores. <br> 
-                    El escuadron de Elite que forma parte de <br>
-                    nuestra policia local y temido por todos los cyberpsicopatas <br>
+            <div class="articulos"> <!--Este articulo debe estar a la derecha-->
+                <img src="./img/MaxTac.jpg" alt="MaxTac">
+                <article>
+                    Uno de los mejores equipos militares de todos los tiempos y 
+                    los encargados de mantener Night City libre de delicuentes. <br>
+                    El escuadron de Elite que forma parte de 
+                    nuestra hermosa policia local y que es temido por todos los cyberpsicopatas 
                     <strong>¡MaxTac!</strong>
                  </article>
-                 <div style="text-align: center;">
-                    <img src="./img/MaxTac.jpg" alt="MaxTac" style="border: 3px solid black;" height="250" width="150">
-                 </div>
-                 <h6 style="text-align: center;">Imagen de una unidad MaxTac</h6>
             </div>
-        </div>
+        </section>
     </main>
 
     <br>
@@ -75,7 +66,7 @@
     <br>
 
     <footer>
-        <small style="text-align: center;">Arasaka© 1916</small>
+        <small>Arasaka© 1916</small>
     </footer>
 </body>
 </html>

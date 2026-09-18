@@ -1,48 +1,164 @@
-/*
-body{ /* Este codigo sirve para cambiar la imagen de fondo*/
-    /*background-image: url(img/Cyberpunk_Fondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
-*{ /* Este codigo sirve para ajustar el margen de distancia que hay entre las palabras*/
-  padding: 0;
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Paleta de colores*/
+:root{
+    --color-primario: #d0ff00;
+    --color-acento: #ff4800;
+    --color-texto: #8c14ee;
+    --color-fondo: #111111;
+    --color-texto-claro: #1900ff;
+    --fuente-principal: "Inter", sans-serif;
+}
+/*Paleta de colores*/
 
-.barra-de-inicio { /* Este codigo sirve para mostrar la barra superior que contiene los links para poder pasar a las distintas paginas*/
-  background-color: #ff0000;
+/*Reset basico*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Reset basico*/
+
+/*Estilos Globales*/
+html{font-size: 18px;}
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/*Estilos Globales*/
+
+/* Barra de navegacion*/
+header{
   display: flex;
-  padding: 5px;
-  justify-content: center;
-  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-family: 'montserrat', sans-serif;
+  color: var(--color-texto-claro);
+  background-color: var(--color-primario);
+  padding: 1.5rem;
 }
 
-nav a {
-  color: rgb(0, 180, 252);
+.logo{ /*El order sirve para que el logo de "Night City" este a la derecha en vez de la izquierda*/
+  order: 2;
 }
 
-nav a:hover {
+.menu{
+  display: flex;
+  list-style: none;
+  order: 1;
+}
+
+.menu .links{
+  padding: 0 15px;
+}
+
+.menu .links a{
+  transition:all .3s ease
+}
+
+.menu .links a:hover{
+  background-color: #42B881;
+}
+
+nav{
+    margin-top: 0.25rem;
+}                        
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}              
+
+nav a{
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+}
+/*Barra de navegacion*/
+
+/*Seccion con Imagenes*/
+.articulos{
   background-color: white;
+  width: 500px;
+  text-align: center;
+}
+
+.articulos img{
+  width: 180px;
+  margin-top: 10px;
+  border: 5px solid #111111;
+  border-radius: 15px;
 }
 
 .cuerpo-articulos{
-  background-color: #ff0000;
   display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+/*Seccion con Imagenes
+
+/*TIPOGRAFIA*/
+
+h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
+h2{font-size: 1.5rem;}
+h3{font-size: 1.25rem;}
+p{margin-top: 1rem;}
+
+/*MAIN Y SECCIONES*/
+
+main{
+    padding: 2rem;
+}
+section{
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid green;
 }
 
-.articulo1{
-  background-color: aquamarine;
-  margin: 0px 25px;
+
+/*FIGURE (SECCION PERO DE IMAGENES)*/
+figure{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1 fr));
+    gap: 15px;
+    justify-content: center;
+}
+/*para las IMAGENES DEL FIGURE*/
+figure img{
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    object-fit: cover;/*ajustar la imagen manteniedno las proporciones*/
+    border-radius: 5px;
+}
+figcaption{
+    grid-row: 1/-1;
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 2px;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+footer a{
+    color: var(--color-acento);
 }
 
-.articulo2{
-  background-color: yellowgreen;
-  margin: 0px 100px;
-}
-
-.articulo3{
-  background-color: blueviolet;
-  margin: 0px 50px;
-}
