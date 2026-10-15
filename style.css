@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /*Paleta de colores*/
 :root{
     --color-primario: #ece712;
@@ -8,7 +6,7 @@
     --color-fondo: #111111;
     --color-texto-claro: #1900ff;
     --color-Articulos: #92ffef;
-    --fuente-principal: "Inter", sans-serif;
+    --fuente-principal: 'Inter', sans-serif;
 }
 /*Paleta de colores*/
 
@@ -37,7 +35,7 @@ body{
 }
 /*Estilos Globales*/
 
-/* Barra de navegacion*/
+/*Barra de navegacion*/
 header{
   display: flex;
   justify-content: space-between;
