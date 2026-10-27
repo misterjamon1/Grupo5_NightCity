@@ -1,11 +1,12 @@
 /*Paleta de colores*/
 :root{
-    --color-primario: #ece712;
+    --color-primario: #f3e600;
     --color-acento: #55ead4;
-    --color-texto: #880425;
-    --color-fondo: #111111;
+    --color-texto: #c5003c;
+    --color-texto-general: #54c1e6;
+    --color-fondo: #000000;
     --color-texto-claro: #1900ff;
-    --color-Articulos: #92ffef;
+    --color-Articulos: #05d9e8;
     --fuente-principal: 'Inter', sans-serif;
 }
 /*Paleta de colores*/
@@ -25,10 +26,10 @@ body{
     font-family: var(--fuente-principal);
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--color-texto);
+    color: var(--color-texto-general);
     margin: 0 auto;
     padding: 0 1rem;
-    background-image: url(../img/Cyberpunk_Fondo.png);
+    background-image: url(../gif/descarga.gif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -43,7 +44,7 @@ header{
     padding: 30px;
     font-family: 'montserrat', sans-serif;
     color: var(--color-texto-claro);
-    background-color: var(--color-primario);
+    background-color: color-mix(in srgb, var(--color-primario) 65%, transparent);
     padding: 1.5rem;
     border-radius: 15px;
 }
@@ -103,17 +104,29 @@ nav a:hover{
 }
 
 .articulos{
-    background-color: var(--color-Articulos);
+    background-color: color-mix(in srgb,var(--color-Articulos) 75%, transparent);
     box-shadow: 2px 2px 6px var(--color-fondo);
     width: 500px;
     text-align: center;
     border-radius: 15px;
 }
 
+.texto-articulos{
+        color: var(--color-texto);
+}
+
 .articulos img{
     width: 250px;
     margin-top: 10px;
     box-shadow: 0px 0px 5px var(--color-fondo);
+    border-radius: 15px;
+}
+
+.test{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 6px var(--color-fondo);
+    width: 500px;
+    text-align: center;
     border-radius: 15px;
 }
 
@@ -183,4 +196,3 @@ footer{
 footer a{
     color: var(--color-acento);
 }
-
