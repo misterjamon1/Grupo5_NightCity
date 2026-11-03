@@ -1,10 +1,12 @@
 /*Paleta de colores*/
 :root{
+    --color-header: #467fa1;
     --color-primario: #f3e600;
     --color-acento: #55ead4;
     --color-texto: #c5003c;
     --color-texto-general: #54c1e6;
     --color-fondo: #000000;
+    --color-links: #42B881;
     --color-texto-claro: #1900ff;
     --color-Articulos: #05d9e8;
     --fuente-principal: 'Inter', sans-serif;
@@ -41,11 +43,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
     font-family: 'montserrat', sans-serif;
-    color: var(--color-texto-claro);
-    background-color: color-mix(in srgb, var(--color-primario) 65%, transparent);
-    padding: 1.5rem;
+    color: var(--color-acento);
+    background-color: color-mix(in srgb, var(--color-header) 65%, transparent);
     border-radius: 15px;
 }
 
@@ -54,45 +54,43 @@ header{
     order: 2;
 }
 
+.logo img{
+    width: 7.5rem;
+}
+
 .menu{
-    display: flex;
+    margin-top: 0.25rem;
     list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: var(--color-primario);
+    display: flex;
     order: 1;
 }
 
 .menu .links{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 900px;
     text-shadow: 2px 2px 5px var(--color-fondo);
     padding: 0 15px;
 }
 
 .menu .links a{
-    transition:all .3s ease
-}
-
-.menu .links a:hover{
-    background-color: #42B881;
-}
-
-nav{
-    margin-top: 0.25rem;
-}                        
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}              
-
-nav a{
     color: var(--color-acento);
     text-decoration: none;
     font-weight: 900;
+    transition:all .3s ease;
+    border-radius: 15px;
 }
 
-nav a:hover{
+.menu .links a:hover{
     color: antiquewhite;
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: var(--color-links);
+    font-size: 22.5px;
 }
+
 /*Barra de navegacion*/
 
 /*Seccion con Imagenes*/
@@ -101,7 +99,10 @@ nav a:hover{
     display: flex;
     justify-content: center;
     column-gap: 25px;
+    color: var(--color-Articulos);
 }
+
+
 
 .articulos{
     background-color: color-mix(in srgb,var(--color-Articulos) 75%, transparent);
@@ -122,28 +123,21 @@ nav a:hover{
     border-radius: 15px;
 }
 
-.test{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 2px 2px 6px var(--color-fondo);
-    width: 500px;
-    text-align: center;
-    border-radius: 15px;
-}
 
 /*Seccion con Imagenes*/
 
 /*TIPOGRAFIA*/
 
-h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
-
 h2{
     font-size: 1.5rem;
     text-align: center;
+    color: var(--color-acento);
 }
 
 h3{
     font-size: 1.25rem;
     text-align: center;
+    color: var(--color-acento);
 }
 
 p{
