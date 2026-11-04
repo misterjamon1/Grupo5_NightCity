@@ -36,52 +36,108 @@
 
         <section class="cuerpo-articulos"> <!--Los articulos NO deben superar los 8 renglones-->
             <div class="articulos"> <!--Este articulo debe estar a la izquierda-->
-                <img src="./img/Trauma Team 2.png" alt="Trauma Team">
-                <article class="texto-articulos">
-                    Uno de los mejores equipos medicos del mundo <br> 
-                    ¡el famoso <strong>Trauma Team</strong>! Ellos llegaran en cuestion de minutos a salvar tu vida <br>
-                    (Siempre y cuando estes subscripto y tengas los €$ para pagarles, claro)
-                </article>
+                <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/Trauma Team 2.png" class="img-fluid rounded-start" alt="Trauma Team">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="texto-articulos">
+                        <h5 class="card-title"><strong>¡Atencion Medica de Primera!</strong></h5>
+                        <p class="card-text">
+                            ¡Traido hacia ustedes por parte del querido grupo de <strong>Trauma Team</strong>! Ellos llegaran en cuestion de minutos a salvar tu vida
+                            (Siempre y cuando estes subscripto y tengas los €$ para pagarles, claro)</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div> 
 
             <div class="articulos"> <!--Este articulo debe estar en el medio-->
-                <img src="./img/Cyberware.png" alt="Cyberware">
-                <article class="texto-articulos">
-                    ¡Cyberware de primer nivel que te puedes implantar en
-                    nuestras mejores clinicas corporativas cortesia de Arasaka! <br> (O puedes tambien
-                    ir a un matasanos y correr el riesgo de volverte un cyberpsicopata,
-                    aqui no juzgamos)
-                 </article>
+                <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/Cyberware.png" class="img-fluid rounded-start" alt="Cyberware">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="texto-articulos">
+                        <h5 class="card-title"><strong>¡Cyberware de primer nivel!</strong></h5>
+                        <p class="card-text">¡Te puedes implantar en nuestras mejores clinicas corporativas cortesia de Arasaka! (O puedes tambien
+                        ir a un matasanos y correr el riesgo de volverte un cyberpsicopata, aqui no juzgamos)</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
 
             <div class="articulos"> <!--Este articulo debe estar a la derecha-->
-                <img src="./img/MaxTac.jpg" alt="MaxTac">
-                <article class="texto-articulos">
-                    Uno de los mejores equipos militares de todos los tiempos y 
-                    los encargados de mantener Night City libre de delicuentes. <br>
-                    El escuadron de Elite que forma parte de 
-                    nuestra hermosa policia local y que es temido por todos los cyberpsicopatas 
-                    <strong>¡MaxTac!</strong>
-                 </article>
+                <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./img/MaxTac.jpg" class="img-fluid rounded-start" alt="MaxTac">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="texto-articulos">
+                        <h5 class="card-title"><strong>Seguridad Impecable</strong></h5>
+                        <p class="card-text">Night City cuenta con una de las mas increibles fuerzas de seguridad de toda N.U.S.A, la devastadora <strong>MaxTac</strong> se encarga de lidiar con todos los cyberpsicopatas que rondan por nuestra bella ciudad</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
-
-        <div class="card" style="width: 20rem; text-align: center;">
-         <img src="./img/Night City Departamento.jpg" class="card-img-top" alt="Departamento de Night City">
-            <div class="card-body">
-                <h5 class="card-title">¿Necesitas unas vacaciones?</h5>
-                    <p class="card-text">Estamos sorteando un resort con todas las comodidades y completamente pagado <br>¿Quieres sentirte como un corpo? ¡Entonces inscribete!
-                    </p>
-                <a href="./Contacto.html" class="btn btn-primary">¡Inscribete aqui!</a>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first items accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
             </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
+              </div>
+            </div>
+          </div>
         </div>
-
     </main>
+
+
     <footer>
         <small>Night City - El futuro está lleno de luces de neón. <br>
                 Arasaka© 1916
         </small>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
 

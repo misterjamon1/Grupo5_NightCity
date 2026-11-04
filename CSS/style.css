@@ -30,23 +30,25 @@ body{
     line-height: 1.6;
     color: var(--color-texto-general);
     margin: 0 auto;
-    padding: 0 1rem;
     background-image: url(../gif/descarga.gif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment:  fixed;
 }
 /*Estilos Globales*/
 
 /*Barra de navegacion*/
 header{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'montserrat', sans-serif;
     color: var(--color-acento);
     background-color: color-mix(in srgb, var(--color-header) 65%, transparent);
-    border-radius: 15px;
 }
 
 .logo{ /*El order sirve para que el logo de "Night City" este a la derecha en vez de la izquierda*/
@@ -105,11 +107,9 @@ header{
 
 
 .articulos{
-    background-color: color-mix(in srgb,var(--color-Articulos) 75%, transparent);
-    box-shadow: 2px 2px 6px var(--color-fondo);
-    width: 500px;
     text-align: center;
     border-radius: 15px;
+    background-size: cover;
 }
 
 .texto-articulos{
@@ -117,14 +117,34 @@ header{
 }
 
 .articulos img{
-    width: 250px;
+    width: 150px;
     margin-top: 10px;
     box-shadow: 0px 0px 5px var(--color-fondo);
     border-radius: 15px;
 }
 
+.mb-3{
+    object-fit: cover;
+    background-color: color-mix(in srgb,var(--color-Articulos) 75%, transparent);
+    height: 250px;
+    box-shadow: 2px 2px 6px var(--color-fondo);
+}
+
+.g-0{
+    height: 275px;
+}
+
+.card-body{
+    height: 275px;
+    object-fit: cover;
+}
 
 /*Seccion con Imagenes*/
+
+/*Acordion*/
+
+
+/*Acordion*/
 
 /*TIPOGRAFIA*/
 
@@ -132,12 +152,15 @@ h2{
     font-size: 1.5rem;
     text-align: center;
     color: var(--color-acento);
+    text-shadow: 2px 2px 5px var(--color-fondo);
 }
 
 h3{
+    text-shadow: 2px 2px 5px var(--color-fondo);
     font-size: 1.25rem;
     text-align: center;
-    color: var(--color-acento);
+    color: var(--color-acento);    
+    text-shadow: 2px 2px 3px var(--color-fondo);
 }
 
 p{
@@ -181,12 +204,17 @@ figcaption{
 }
 /*FOOTER*/
 footer{
-    background-color: var(--color-primario);
-    color: var(--color-texto-claro);
+    background-color: color-mix(in srgb, var(--color-header) 65%, transparent);
+    color: var(--color-primario);
     padding: 1.5rem;
     margin-top: 2rem;
     text-align: center;
 }
-footer a{
-    color: var(--color-acento);
+
+small{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 900px;
+    text-shadow: 2px 2px 5px var(--color-fondo);
+    padding: 0 15px;
 }
