@@ -141,6 +141,50 @@ header{
 
 /*Seccion con Imagenes*/
 
+/*Seccion barrios en la sección ciudad*/
+
+#barrios article {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+#barrios article h3,
+#barrios article p {
+    width: 100%;
+}
+
+#barrios figure {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+#barrios figure img {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px var(--color-fondo);
+    border: 3px solid var(--color-fondo);
+}
+
+#barrios figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--color-acento);
+    margin-top: 5px;
+}
+
+/*Seccion barrios en la sección ciudad*/
+
 /*Acordion*/
 
 
