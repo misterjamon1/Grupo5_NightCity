@@ -15,7 +15,7 @@
     <header>
         <h1 class="logo">
             <a href="./index.html">
-                <img src="./img/Night City Logo.png" alt="Logo de Night City">
+                <img src="./img/Night City Logo.png" alt="Logo de Night City" id="logo">
             </a>
         </h1>
             <nav>
@@ -33,13 +33,14 @@
         <p>¡Te damos la bienvenida a la pagina oficial de Night City! <br>
         Aqui podras tener un pequeño y ligero vistazo a lo que nuestra hermosa ciudad te puede ofrecer <br></p>
         <h3>Night City cuenta con:</h3>
+        <br>
 
-        <section class="cuerpo-articulos"> <!--Los articulos NO deben superar los 8 renglones-->
-            <div class="articulos"> <!--Este articulo debe estar a la izquierda-->
+        <section class="cuerpo-articulos"><!--Los articulos NO deben superar los 8 renglones-->
+            <div class="articulos" id="miArticulo"> <!--Este articulo debe estar a la izquierda o primer lugar-->
                 <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/Trauma Team 2.png" class="img-fluid rounded-start" alt="Trauma Team">
+                    <img src="./img/Trauma Team 2.png" alt="Trauma Team">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -55,11 +56,11 @@
                 </div>
             </div> 
 
-            <div class="articulos"> <!--Este articulo debe estar en el medio-->
+            <div class="articulos" id="miArticulo"> <!--Este articulo debe estar en el medio o segundo lugar-->
                 <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/Cyberware.png" class="img-fluid rounded-start" alt="Cyberware">
+                    <img src="./img/Cyberware.png" alt="Cyberware">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -74,11 +75,11 @@
                 </div>
             </div>
 
-            <div class="articulos"> <!--Este articulo debe estar a la derecha-->
+            <div class="articulos" id="miArticulo"> <!--Este articulo debe estar a la derecha o tercer lugar-->
                 <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                    <img src="./img/MaxTac.jpg" class="img-fluid rounded-start" alt="MaxTac">
+                    <img src="./img/MaxTac.jpg" alt="MaxTac">
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
@@ -92,6 +93,7 @@
                 </div>
             </div>
         </section>
+
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
@@ -137,6 +139,7 @@
                 Arasaka© 1916
         </small>
     </footer>
+    <script src="./JavaScript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
