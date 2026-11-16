@@ -403,3 +403,10 @@ small{
     max-width: 750px;
     margin: auto;
 }
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-acento);
+    text-shadow: 2px 2px 5px var(--color-fondo); 
+}
