@@ -11,21 +11,38 @@
         <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
-        <header>
-            <h1 class="logo">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <h1 class="logo">
                 <a href="./index.html">
-                    <img src="./img/Night City Logo.png" alt="Logo de Night City">
+                  <img src="./img/night-city-logo.png" alt="Logo de Night City" id="logo">
                 </a>
-            </h1>
-                <nav>
-                    <ul class="menu">
-                        <li class="links"><a href="./index.html">Inicio</a></li>               
-                        <li class="links">Lugares</li>
-                        <li class="links"><a href="./Ciudad.html">Ciudad</a></li>
-                        <li class="links"><a href="./Contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-        </header> 
+              </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                <li class="nav-item">
+                    <a class="links" href="./index.html">Inicio</a>
+                </li>
+                <li class="link-no-activo">
+                    Lugares
+                </li>
+                <li class="nav-item">
+                  <a class="links" href="./Ciudad.html">Ciudad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="links" href="./Contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
             <main>
                 <section id="introduccion">
                     <h2>Descubrí los lugares de Night City</h2>
@@ -229,7 +246,7 @@
                 Arasaka© 1916
             </small>
         </footer>
+        <script src="./JavaScript/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="JavaScript/script.js"></script>
     </body>
 </html>

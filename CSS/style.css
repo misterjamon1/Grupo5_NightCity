@@ -52,7 +52,6 @@ header{
 }
 
 .logo{ /*El order sirve para que el logo de "Night City" este a la derecha en vez de la izquierda*/
-    order: 2;
     padding: 0 1rem;
 }
 
@@ -60,38 +59,50 @@ header{
     width: 7.5rem;
 }
 
-.menu{
+.navbar {
+    background-color: color-mix(in srgb, var(--color-header) 0%, transparent) !important;
+}
+
+.navbar-toggler{
+    box-shadow: 2px 2px 6px var(--color-fondo);
+}
+
+.container-fluid{
     margin-top: 0.25rem;
     list-style: none;
     display: flex;
     gap: 1rem;
-    color: var(--color-primario);
-    display: flex;
-    order: 1;
 }
 
-.menu .links{
-    color: var(--color-primario);
+.container-fluid .menu{
     text-decoration: none;
     font-size: 22.5px;
     font-weight: 1200px;
     text-shadow: 2px 2px 5px var(--color-fondo);
-    padding: 0 15px;
 }
 
-.menu .links a{
+.container-fluid .menu .links{
     color: var(--color-acento);
     text-decoration: none;
     font-weight: 900;
     transition:all .3s ease;
     border-radius: 15px;
+    padding: 0 30px;
 }
 
-.menu .links a:hover{
+.container-fluid .menu .links:hover{
     color: antiquewhite;
     text-decoration: none;
     background-color: var(--color-links);
-    font-size: 30px;
+}
+
+.container-fluid .menu .link-no-activo{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-size: 22.5px;
+    font-weight: 1200px;
+    text-shadow: 2px 2px 5px var(--color-fondo);
+    padding: 0 30px;
 }
 
 /*Barra de navegacion*/
@@ -150,15 +161,17 @@ header{
     border-color: var(--color-acento);
 }
 
+
 /*Seccion barrios en la sección ciudad*/
 
 #barrios article {
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: flex-start;
+    font-size: 0.9rem;
+    color: var(--color-acento);
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid var(--color-acento);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #barrios article h3,
@@ -190,23 +203,28 @@ header{
     font-size: 0.9rem;
     color: var(--color-acento);
     margin-top: 5px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border: 1px solid var(--color-acento);
-    border-radius: 10px;
-    padding: 20px;
 }
 
 /*Seccion barrios en la sección ciudad*/
 
-/*Acordion*/
+/*Acordeon*/
 
 .accordion {
-  --bs-accordion-bg: color-mix(in srgb,var(--color-texto) 70%, transparent);; /* Fondo general del acordeón */
-  --bs-accordion-btn-bg: color-mix(in srgb,var(--color-header) 100%, transparent);; /* Fondo del botón */
-  --bs-accordion-btn-color: color-mix(in srgb,var(--color-texto-claro) 100%); /* Color del texto del botón */
-  --bs-accordion-active-bg: color-mix(in srgb,var(--color-header) 50%, transparent);; /* Fondo cuando está activo/abierto */
-  --bs-accordion-active-color: color-mix(in srgb,var(--color-primario) 100%, transparent);; /* Color de texto cuando está activo */
+  --bs-accordion-btn-focus-box-shadow: none; /* Sombra que se genera al abrir el acordeon */
+  --bs-accordion-bg: color-mix(in srgb,var(--color-texto) 50%, transparent); /* Fondo general del acordeon */
+  --bs-accordion-btn-bg: color-mix(in srgb,var(--color-fondo) 85%, transparent); /* Fondo del boton */
+  --bs-accordion-btn-color: color-mix(in srgb,var(--color-links) 100%); /* Color del boton */
+  --bs-accordion-active-bg: color-mix(in srgb,var(--color-header) 50%, transparent); /* Fondo cuando esta activo/abierto */
+  --bs-accordion-active-color: color-mix(in srgb,var(--color-primario) 100%, transparent); /* Color de texto cuando está activo */
 } /*Solo funciona con color-mix(?*/
+
+.accordion-header{
+    color: var(--color-links);
+}
+
+.accordion-body{
+    color: var(--color-texto-general);
+}
 
 /*Acordion*/
 
