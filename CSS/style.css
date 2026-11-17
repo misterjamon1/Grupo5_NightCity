@@ -421,3 +421,21 @@ small{
     max-width: 750px;
     margin: auto;
 }
+
+#introduccion {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+#introduccion h1 {
+    color: var(--color-acento);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#introduccion p {
+    color: var(--color-texto-general);
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.6;
+}
