@@ -3,12 +3,13 @@
     --color-header: #467fa1;
     --color-primario: #f3e600;
     --color-acento: #55ead4;
-    --color-texto: #c5003c;
+    --color-texto: white;
     --color-texto-general: #54c1e6;
     --color-fondo: #000000;
     --color-links: #42B881;
     --color-texto-claro: #1900ff;
     --color-Articulos: #05d9e8;
+    --color-hover: antiquewhite;
     --fuente-principal: 'Inter', sans-serif;
 }
 /*Paleta de colores*/
@@ -91,7 +92,7 @@ header{
 }
 
 .container-fluid .menu .links:hover{
-    color: antiquewhite;
+    color: var(--color-hover);
     text-decoration: none;
     background-color: var(--color-links);
 }
@@ -109,42 +110,11 @@ header{
 
 /*Seccion con Imagenes*/
 
-.cuerpo-articulos{
-    display: flex;
-    justify-content: center;
-    column-gap: 25px;
-    color: var(--color-Articulos);
+.articulos img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
 }
-
-.articulos{
-    text-align: center;
-    border-radius: 15px;
-    background-size: cover;
-}
-
-.texto-articulos{
-     font-size: 0.95rem;
-     color: var(--color-texto);
-}
-
-.articulos img{
-    width: 150px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 5px var(--color-fondo);
-    border-radius: 15px;
-}
-
-.mb-3{
-    background-color: color-mix(in srgb,var(--color-Articulos) 70%, transparent);
-    height: 300px;
-    box-shadow: 2px 2px 6px var(--color-fondo);
-    overflow: auto;
-}
-
-.card-text{
-    text-shadow: none;
-}
-
 /*Seccion con Imagenes*/
 
 .btn-outline-primary {
@@ -209,26 +179,74 @@ header{
 
 /*Acordeon*/
 
-.accordion {
-  --bs-accordion-btn-focus-box-shadow: none; /* Sombra que se genera al abrir el acordeon */
-  --bs-accordion-bg: color-mix(in srgb,var(--color-texto) 50%, transparent); /* Fondo general del acordeon */
-  --bs-accordion-btn-bg: color-mix(in srgb,var(--color-fondo) 85%, transparent); /* Fondo del boton */
-  --bs-accordion-btn-color: color-mix(in srgb,var(--color-links) 100%); /* Color del boton */
-  --bs-accordion-active-bg: color-mix(in srgb,var(--color-header) 50%, transparent); /* Fondo cuando esta activo/abierto */
-  --bs-accordion-active-color: color-mix(in srgb,var(--color-primario) 100%, transparent); /* Color de texto cuando está activo */
-} /*Solo funciona con color-mix(?*/
+.mi-acordeon { /* Para controlar el tamaño del acordeon */
+    max-width: 55rem;
+    margin: 30px auto;
+}
+
+.mi-acordeon .accordion-item { /* Secciones del acordeon */
+    background-color: color-mix(in srgb, var(--color-header) 0%, transparent);
+    border: 1px solid var(--color-Articulos);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--color-Articulos);
+}
+
+.mi-acordeon .accordion-button { /* Titulo de la seccion y el fondo del mismo */
+    background-color: color-mix(in srgb, var(--color-fondo) 75%, transparent);
+    color: var(--color-Articulos);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.mi-acordeon .accordion-button:hover { /* Mouse */
+    background-color: color-mix(in srgb, var(--color-links) 75%, transparent);
+    color: var(--color-hover);
+    transition:all .3s ease;
+}
+
+.mi-acordeon .accordion-button:not(.collapsed) { /* Acordeon abierto  */
+    background-color: color-mix(in srgb, var(--color-header) 75%, transparent);
+    color: var(--color-texto);
+}
+
+.mi-acordeon .accordion-button::after { /* Flecha del acordeon */
+    filter: invert(1);
+}
+
+.mi-acordeon .accordion-body { /* Lo que esta DENTRO del acordeon */
+    background-color: color-mix(in srgb, var(--color-fondo) 50%, transparent);
+    color: var(--color-texto);
+    padding: 20px;
+    text-align: center;
+}
+
+.mi-acordeon .accordion-body a { /* Para los links del acordeon */ 
+    color: var(--color-texto-general);
+    text-decoration: none;
+}
+
+.mi-acordeon .accordion-body a:hover { /* Para cuando el mouse pasa por encima de los links que estan dentro del acordeon */
+    transition:all .3s ease;
+    color: var(--color-primario);
+    text-decoration: underline;
+}
 
 .accordion-header{
     color: var(--color-links);
 }
 
-.accordion-body{
-    color: var(--color-texto-general);
-}
-
 /*Acordion*/
 
 /*TIPOGRAFIA*/
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-acento);
+    text-shadow: 2px 2px 5px var(--color-fondo); 
+}
 
 h2{
     font-size: 1.5rem;
@@ -402,11 +420,4 @@ small{
     line-height: 1.6;
     max-width: 750px;
     margin: auto;
-}
-
-h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--color-acento);
-    text-shadow: 2px 2px 5px var(--color-fondo); 
 }

@@ -1,163 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Inicio - Nigh City</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Nigh City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-              <div class="logo">
-                <a href="./index.html">
-                  <img src="./img/night-city-logo.png" alt="Logo de Night City" id="logo">
-                </a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./img/night-city-logo.png" alt="Logo de Night City" id="logo">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+            <li class="link-no-activo">
+              Inicio
+            </li>
+            <li class="nav-item">
+              <a class="links" href="./Lugares.html">Lugares</a>
+            </li>
+            <li class="nav-item">
+              <a class="links" href="./Ciudad.html">Ciudad</a>
+            </li>
+            <li class="nav-item">
+              <a class="links" href="./Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <h2><em>"El mejor lugar del mundo!"</em></h2>
+    <p>¡Te damos la bienvenida a la pagina oficial de Night City! <br>
+      Aqui podras tener un pequeño y ligero vistazo a lo que nuestra hermosa ciudad te puede ofrecer <br></p>
+    <h3>Night City cuenta con:</h3>
+    <br>
+
+    <section id="lugares">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Trauma Team</h2>
+                <div class="articulos">
+                  <img src="./img/trauma-team-2.png" class="figure-img img-fluid rounded w-100" alt="Trauma Team">
+                </div>
+                  <figcaption class="figure-caption">
+                    <strong>¡Atencion Medica de Primera!</strong>
+                  </figcaption>
+                <section>
+                  <p>
+                    ¡Traido hacia ustedes por parte del querido grupo de <strong>Trauma Team</strong>! Ellos llegaran en
+                    cuestion de minutos a salvar tu vida
+                    (Siempre y cuando estes subscripto y tengas los €$ para pagarles, claro)
+                  </p>
+                </section>
               </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
-                <li class="link-no-activo">
-                  Inicio
-                </li>
-                <li class="nav-item">
-                  <a class="links" href="./Lugares.html">Lugares</a>
-                </li>
-                <li class="nav-item">
-                  <a class="links" href="./Ciudad.html">Ciudad</a>
-                </li>
-                <li class="nav-item">
-                  <a class="links" href="./Contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
+            </article>
           </div>
-        </nav>
-    </header>
 
-
-    <main>
-        <h1><em>"El mejor lugar del mundo!"</em></h1>
-        <p>¡Te damos la bienvenida a la pagina oficial de Night City! <br>
-        Aqui podras tener un pequeño y ligero vistazo a lo que nuestra hermosa ciudad te puede ofrecer <br></p>
-        <h3>Night City cuenta con:</h3>
-        <br>
-
-        <section class="cuerpo-articulos"><!--Los articulos NO deben superar los 8 renglones-->
-            <div class="articulos"> <!--Este articulo debe estar a la izquierda o primer lugar-->
-                <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="./img/trauma-team-2.png" alt="Trauma Team">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <div class="texto-articulos">
-                        <h4 class="card-title"><strong>¡Atencion Medica de Primera!</strong></h4>
-                        <p class="card-text">
-                            ¡Traido hacia ustedes por parte del querido grupo de <strong>Trauma Team</strong>! Ellos llegaran en cuestion de minutos a salvar tu vida
-                            (Siempre y cuando estes subscripto y tengas los €$ para pagarles, claro)</p>
-                        </div>
-                    </div>
-                    </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">Cyberware</h2>
+                <div class="articulos">
+                  <img src="img/Cyberware.png" class="figure-img img-fluid rounded w-100" alt="Cyberware">
                 </div>
-                </div>
-            </div> 
-
-            <div class="articulos"> <!--Este articulo debe estar en el medio o segundo lugar-->
-                <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="./img/Cyberware.png" alt="Cyberware">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <div class="texto-articulos">
-                        <h4 class="card-title"><strong>¡Cyberware de primer nivel!</strong></h4>
-                        <p class="card-text">¡Te puedes implantar en nuestras mejores clinicas corporativas cortesia de Arasaka! (O puedes tambien
-                        ir a un matasanos y correr el riesgo de volverte un cyberpsicopata, aqui no juzgamos)</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-            <div class="articulos"> <!--Este articulo debe estar a la derecha o tercer lugar-->
-                <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                    <img src="./img/MaxTac.jpg" alt="MaxTac">
-                    </div>
-                    <div class="col-md-8">
-                    <div class="card-body">
-                        <div class="texto-articulos">
-                        <h4 class="card-title"><strong>Seguridad Impecable</strong></h4>
-                        <p class="card-text">Night City cuenta con una de las mas increibles fuerzas de seguridad de toda N.U.S.A, la devastadora <strong>MaxTac</strong> se encarga de lidiar con todos los cyberpsicopatas que rondan por nuestra bella ciudad</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                ¿Quieres ver que lugares tiene para ofrecerte Night City?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong><a href="./Lugares.html">Entra aqui</a></strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Necesitas saber mas sobre esta hermosa ciudad?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
+                  <figcaption class="figure-caption">
+                    <strong>¡Cyberware de primer nivel!</strong>
+                  </figcaption>
+                </figure>
+                <section>
+                  <p>
+                    ¡Te puedes implantar en nuestras mejores clinicas corporativas cortesia de
+                    Arasaka! (O puedes tambien
+                    ir a un matasanos y correr el riesgo de volverte un cyberpsicopata, aqui no juzgamos)
+                  </p>
+                </section>
               </div>
-            </div>
+            </article>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿O quieres conseguir un cupo para venir a visitarnos?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. 
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">MaxTac</h2>
+                  <div class="articulos">
+                      <img src="img/MaxTac.jpg" alt="MaxTac">
+                  </div>
+                  <figcaption class="figure-caption">
+                    <strong>Seguridad Impecable</strong>
+                  </figcaption>
+                <section>
+                  <p>
+                    Night City cuenta con una de las mas increibles fuerzas de seguridad de toda
+                    N.U.S.A, la devastadora <strong>MaxTac</strong> se encarga de lidiar con todos los cyberpsicopatas
+                    que rondan por nuestra bella ciudad
+                  </p>
+                </section>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
+    <h3>Quieres saber mas cosas de la ciudad como...</h3>
 
-    <footer>
-        <small>Night City - El futuro está lleno de luces de neón. <br>
-                Arasaka© 1916
-        </small>
-    </footer>
-    <script src="./JavaScript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="accordion mi-acordeon" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            ¿Que lugares tiene para ofrecerte Night City?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            ¡Night City tiene miles de lugares preciosos a los cuales puedes ir y deleitar tus ojos en ellos!
+            Tales como la imponente y preciosa Torre Arasaka, el grandioso distrito Watson para gastes tus €$ o, si quieres algo mas contemporaneo, puedes ir a Pacifica. <br>
+            ¿Quieres saber mas o donde encontrarlos? <strong><a href="./Lugares.html">¡Cliquea aqui!</a></strong>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Necesitas saber mas sobre esta hermosa ciudad?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Night City ya lleva mas de 60 años de historia, y si deseas saber cosas como nuestras costumbres, los demas barrios que se encuentran aqui o algunos pequeños datos claves que te serviran para sacarle charla al chic@ que te gusta, ¡estas de suerte! <br>Solo <strong><a href="./Ciudad.html">tienes que cliquear aqui amigo mio</a></strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿O quieres conseguir un cupo para venir a visitarnos?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Todos los dias miles de millones de personas vienen a Night City a pasarla increible, disfrutar de nuestra gastronomia y de las hermosas mujeres y hombre que viven aqui, pero debido a ciertos problemas que hemos tenido con algunos NetRunners, hemos decidido que apartir de ahora, para poder visitarnos tendras que llenar un pequeño formulario y nuestra excelentisima IA se encargara de verificar si eres el indicado para venir aqui o no! <br> <strong><a href="./Contacto.html">Llena el formulario aqui</a></strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <small>Night City - El futuro está lleno de luces de neón. <br>
+      Arasaka© 1916
+    </small>
+  </footer>
+  <script src="./JavaScript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
