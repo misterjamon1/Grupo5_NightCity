@@ -44,53 +44,109 @@
         <main>
             <h2>¿Cómo conseguir un cupo?</h2>
             <br>
-            ><h3>Solicitá tu viaje a la Night City</h3>
-            <form action="#" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+            <h3>Solicitá tu viaje a la Night City</h3>
+
+            <form action="#" method="post" id="formulario">
+                <div class="container">
+
+                    <!-- tarjeta izquierda -->
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3>Información personal y medio de contacto</h3>
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre y apellido</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresar tu nombre y apellido" required>
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar tu correo electrónico" required>
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="cumpleanios" class="form-label">Cuando Naciste?</label>
+                                        <input type="date" class="form-control" name="cumpleanios" id="cumpleanios" required>
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="telefono" class="form-label">Telefono</label>
+                                        <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="+1122334455" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- tarjeta derecha -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3>Información del viaje</h3>
+                                    <div class="mb-3">
+                                        <label for="fecha" class="form-label">Fecha de viaje</label>
+                                        <input type="date" class="form-control" id="fecha" name="fecha">
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="dias" class="form-label">Cantidad de días</label>
+                                        <input type="number" class="form-control" id="dias" name="dias" min="1">
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="personas" class="form-label">Cantidad de pasajeros</label>
+                                        <input type="number" class="form-control" id="personas" name="personas" min="1">
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="distrito" class="form-label">Distrito a visitar</label>
+                                        <select name="distrito" id="distrito" class="form-select" required>
+                                            <option value="">Elegí un distrito</option>
+                                            <option value="watson">Watson</option>
+                                            <option value="westbrook">Westbrook</option>
+                                            <option value="heywood">Heywood</option>
+                                            <option value="pacifica">Pacifica</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="mb-3">
+                                        <label for="distrito" class="form-label">Disponibilidad para viajar</label>
+                                        <select name="turno" id="turno" class="form-select" required>
+                                            <option value="">Eleji tu disponibilidad</option>
+                                            <option value="ma">Mañana</option>
+                                            <option value="ta">Tarde</option>
+                                            <option value="no">Noche</option>
+                                        </select>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <!-- tarjeta inferior -->
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <label for="mensaje" class="form-label">Dejanos tu consulta</label>
+                                    <textarea name="mensaje" id="mensaje" rows="4" class="form-control" placeholder="Contanos qué te gustaría conocer de Night City"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br>
-                <br>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
-                <br>
-                <br>
-                <label for="cumpleanios">Cuando Naciste?</label>
-                <input type="date" name="cumpleanios" id="cumpleanios">
-                <br>
-                <br>
-                <label for="fecha">Fecha de viaje</label>
-                <input type="date" id="fecha" name="fecha">
-                <br>
-                <br>
-                <label for="personas">Cantidad de pasajeros</label>
-                <input type="number" id="personas" name="personas" min="1">
-                <br>
-                <br>
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="+1122334455">
-                <br>
-                <br>
-                <select name="distrito" id="distrito" required>
-                    <option value="">Elegí un distrito</option>
-                    <option value="watson">Watson</option>
-                    <option value="westbrook">Westbrook</option>
-                    <option value="heywood">Heywood</option>
-                    <option value="pacifica">Pacifica</option>
-                </select>
-                <br>
-                <br>
-                <select name="turno" id="turno">
-                    <option value="">Eleji tu disponibilidad</option>
-                    <option value="ma">Mañana</option>
-                    <option value="ta">Tarde</option>
-                    <option value="no">Noche</option>
-                </select>            
-                <br>
-                <br>
-                <label for="mensaje">Dejanos tu consulta</label>
-                <textarea name="mensaje" id="mensaje" rows="4" placeholder="Contanos qué te gustaría conocer de Night City"></textarea>            
-                <br>
-                <br>
+                <!-- boton -->
+                <div class="row mt-4">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-info btn-lg">
+                    Enviar solicitud
+                </button>
+            </div>
+        </div>
                 <button type="submit">Enviar solicitud</button>
             </form>
         </main>

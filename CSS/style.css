@@ -257,7 +257,6 @@ h2{
 }
 
 h3{
-    text-shadow: 2px 2px 5px var(--color-fondo);
     font-size: 1.25rem;
     text-align: center;
     color: var(--color-acento);    
