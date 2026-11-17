@@ -118,15 +118,16 @@ header{
 /*Seccion con Imagenes*/
 
 .btn-outline-primary {
-    color: rgba(0, 0, 0, 0.85);
-    border-color: rgba(0, 0, 0, 0.85);
+    color: var(--color-Articulos);
     border-radius: 20px;
-    background-color: color-mix(var(--color-header), transparent);
-
+    background-color: color-mix(in srgb, var(--color-fondo) 75%, transparent);
+    border: 1px solid var(--color-Articulos);
+    box-shadow: 0 0 10px var(--color-Articulos);
 }
 
 .btn-outline-primary:hover {
-    color: black;
+    font-size: 18px;
+    font-weight: bold;
     background-color: color-mix(var(--color-links), transparent);
     border-color: var(--color-acento);
 }
