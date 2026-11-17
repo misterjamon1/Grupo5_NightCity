@@ -439,3 +439,36 @@ small{
     margin: auto;
     line-height: 1.6;
 }
+
+/* Fondo oscuro de la imagen ampliada */
+#visor-imagen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+/* Imagen ampliada */
+#visor-imagen img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border: 2px solid var(--color-acento);
+    border-radius: 10px;
+}
+/* Botón para cerrar */
+#cerrar-visor {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
