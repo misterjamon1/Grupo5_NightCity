@@ -472,3 +472,39 @@ small{
     font-size: 40px;
     cursor: pointer;
 }
+
+/* FORMULARIO DE CONTACTO */
+
+#formulario input::placeholder,
+#formulario textarea::placeholder {
+    color: #9be6d9;
+    opacity: 1;
+}
+
+#formulario .form-label {
+    color: var(--color-texto-general);
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#formulario .form-control, #formulario .form-select {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    border: 1px solid #587b85;
+    border-radius: 6px;
+}
+
+#formulario input[type="date"] {
+    color: #cfcfcf;
+    color-scheme: dark;
+}
+
+/* TARJETAS DEL FORMULARIO */
+
+#formulario .card {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid var(--color-acento);
+    border-radius: 12px;
+}
