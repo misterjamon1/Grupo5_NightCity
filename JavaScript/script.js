@@ -63,3 +63,32 @@ document.addEventListener('keydown', (evento) => {
         visor.style.display = 'none';
     }
 });
+
+/*VALIDACIÓN DEL FORMULARIO */
+
+const formulario = document.getElementById("formulario");
+const mensaje = document.getElementById("mensaje-formulario");
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault();
+    if (formulario.checkValidity()) {
+        mensaje.textContent = "¡Solicitud completada correctamente!";
+        mensaje.style.color = "#55ead4";
+    } else {
+        mensaje.textContent = "Revisá los campos obligatorios.";
+        mensaje.style.color = "#ff6b6b";
+        formulario.reportValidity();
+    }
+});
+
+/* CAMBIO DE COLOR DE LOS CAMPOS */
+
+const campos = document.querySelectorAll(
+    '#formulario input, #formulario textarea, #formulario select'
+);
+
+campos.forEach(function(campo) {
+    function actualizarColor() { if (campo.value.trim() !== "") { campo.classList.add("campo-completo"); } else { campo.classList.remove("campo-completo"); } }
+    campo.addEventListener("input", actualizarColor);
+    campo.addEventListener("change", actualizarColor);
+    actualizarColor();
+});
