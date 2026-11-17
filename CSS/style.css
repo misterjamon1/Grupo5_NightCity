@@ -541,3 +541,37 @@ small{
 #formulario input[type="date"] {
     color-scheme: dark;
 }
+
+/* FECHAS SIN COMPLETAR */
+
+#formulario input[type="date"] {
+    color: #9be6d9;
+    color-scheme: dark;
+}
+
+/* FECHAS COMPLETADAS */
+
+#formulario input[type="date"].campo-completo {
+    color: white;
+    border-color: var(--color-acento);
+}
+
+/* ANIMACIÓN DEL BOTÓN ENVIAR */
+
+#formulario button[type="submit"] {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* AL PASAR EL MOUSE */
+
+#formulario button[type="submit"]:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px var(--color-acento);
+}
+
+/* AL HACER CLIC */
+
+#formulario button[type="submit"]:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px var(--color-acento);
+}

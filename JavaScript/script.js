@@ -70,9 +70,14 @@ const formulario = document.getElementById("formulario");
 const mensaje = document.getElementById("mensaje-formulario");
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
+    console.log("Se ejecutó el submit");
     if (formulario.checkValidity()) {
         mensaje.textContent = "¡Solicitud completada correctamente!";
         mensaje.style.color = "#55ead4";
+        formulario.reset();
+        campos.forEach(function(campo) {
+            campo.classList.remove("campo-completo");
+        });
     } else {
         mensaje.textContent = "Revisá los campos obligatorios.";
         mensaje.style.color = "#ff6b6b";
@@ -92,3 +97,4 @@ campos.forEach(function(campo) {
     campo.addEventListener("change", actualizarColor);
     actualizarColor();
 });
+
