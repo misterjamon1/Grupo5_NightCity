@@ -123,15 +123,20 @@ header{
     background-color: color-mix(in srgb, var(--color-fondo) 75%, transparent);
     border: 1px solid var(--color-Articulos);
     box-shadow: 0 0 10px var(--color-Articulos);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    --bs-btn-active-color: var(--color-texto);
+    --bs-btn-active-bg: var(--color-header);
+    --bs-btn-active-border-color: var(--color-Articulos);
 }
 
 .btn-outline-primary:hover {
     font-size: 18px;
     font-weight: bold;
-    background-color: color-mix(var(--color-links), transparent);
+    background-color: color-mix(in srgb, var(--color-links) 75%, transparent);
     border-color: var(--color-acento);
+    transform: translateY(-5px);
 }
-
 
 /*Seccion barrios en la sección ciudad*/
 
@@ -174,6 +179,27 @@ header{
     font-size: 0.9rem;
     color: var(--color-acento);
     margin-top: 5px;
+}
+
+/*Seccion historia en sección ciudad*/
+
+#historia .card {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--color-acento);
+    border: 1px solid var(--color-acento);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#historia .card:hover {
+    transform: translateY(-5px);
+}
+
+#historia .card-body {
+    padding: 1.25rem;
 }
 
 /*Seccion barrios en la sección ciudad*/
