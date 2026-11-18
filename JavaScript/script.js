@@ -21,7 +21,7 @@ const links = document.querySelectorAll('.nav-item');
         links.style.transform = 'scale(1) translateX(0px)';
     })
 });
-const imagenesLugares = document.querySelectorAll('#lugares figure img');
+const imagenesLugares = document.querySelectorAll('#lugares figure img, #barrios figure img');
 
 const visor = document.createElement('div');
 visor.id = 'visor-imagen';
