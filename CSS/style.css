@@ -347,46 +347,100 @@ small{
     padding: 0 15px;
 }
 
+
+/* Tarjetas */
 #lugares .card {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.88);
     color: white;
     border: 1px solid var(--color-acento);
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    height:auto;
+    align-self: start;
 }
 
 #lugares .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 0 12px var(--color-acento);
 }
 
+/* Título */
+#lugares .card-title {
+    color: var(--color-primario);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* Imagen */
 #lugares figure {
     display: block;
     width: 100%;
-    margin: 0 0 1rem;
 }
 
 #lugares figure img {
     width: 100%;
-    height: 220px;
+    height: 190px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
+/* Figcaption */
 #lugares figcaption {
+    color: var(--color-acento);
     text-align: center;
-    font-style: italic;
-    color: var(--color-header);
-    margin-top: 8px;
+    font-size: 0.85rem;
 }
 
-#lugares .card-body {
-    padding: 1.25rem;
+/* Botón leer más */
+#lugares .btn-leer {
+    display: block;
+    width: 100%;
+    border-color: var(--color-acento);
+    color: var(--color-acento);
+    transition: 0.3s;
 }
 
-#lugares .card p {
+#lugares .btn-leer:hover {
+    background-color: var(--color-acento);
+    color: black;
+}
+
+/* Información desplegable */
+#lugares .collapse h3 {
+    color: var(--color-acento);
+    font-size: 1.1rem;
     text-align: left;
 }
+
+#lugares .collapse p,
+#lugares .collapse li {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+}
+/* Contenido interno de la tarjeta */
+#lugares .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+/* Título */
+#lugares .card-title {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botón al final de la tarjeta */
+#lugares .btn-leer {
+    margin-top: 10px;
+}
+
 #datos {
     background-color: rgba(0, 0, 0, 0.85);
     border: 1px solid var(--color-acento);
